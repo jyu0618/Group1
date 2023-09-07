@@ -12,6 +12,7 @@ class BTreeBot: Bot(BotInfo.fromFile("BTreeBot.json")) {
         while (true) {
             turnRight(45.0)
             turnGunLeft(360.0)
+            
         }
     }
 
