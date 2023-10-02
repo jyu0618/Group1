@@ -38,6 +38,45 @@ Full instructions for the JVM is available in the official docs: https://robocod
 
 For using this repo as a template, add logic to `BTreeBot.kt` and compile. You should get a final folder in BTreeBot. Send that BTreeBot folder to the host.
 
+## Competition agenda 
+We'll run a series of rounds and use the scoring system built into Tank Royale to determine the winner. The general agenda would be:
+
+### Introduction - ~20 mins
+- Who Neara is and what we do
+- What the competition is about and prizes that will be won
+- The people who are helping from Neara's side
+
+### Competition details - ~20 mins
+- Going over this repository and how a game is run
+- What is expected of your teams
+- How scoring is done
+
+### Breakout into teams - ~60 mins
+- Team assignment and intro to each other 
+- Formulate a strategy
+- Read suggested documentation
+- Build build build
+
+### Test run - ~15 mins
+- 1 hour into the team breakout, we'll get everyone's bot shipped and make sure everything's working
+
+### Build build build - ~60 mins
+
+### Round 1 - Feeling out the other bots
+- Score not counted, just to get a feel for how people are building their bots
+
+### Last Day
+- Final preparations and we run the actual competition
+- Judging, scoring and winner announcements
+
+## Scoring details
+Scoring will be done on several categories out of 10 by the Neara panel weighted accordingly to the following table:
+| Category         | Description                                                                                                                                                                        | Weight |
+|:---------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |:------ |
+| Battle results   | Bot placing in Tank Royale. 10/10 for 1st place, 8/10 for second, 6/10 for third. Everyone else is 4/10                                                                            | 0.5    |
+| Bot modularity   | The easier it is to modify the behaviour of your bot, the more points you get. Coding best practices and principles apply. Think data structures, algorithms and code cleanliness. | 0.3    |
+| Code testability | How testable is your bot's code? Prove it with unit tests.                                                                                                                         | 0.2    |
+
 
 ## Requirements and references
 - JDK 18 for this repo. The bot should be compiled down to JDK 11 for the final jar.

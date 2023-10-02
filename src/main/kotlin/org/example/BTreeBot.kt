@@ -3,6 +3,7 @@ package org.example
 import dev.robocode.tankroyale.botapi.Bot
 import dev.robocode.tankroyale.botapi.BotInfo
 import dev.robocode.tankroyale.botapi.Color
+import dev.robocode.tankroyale.botapi.events.RoundEndedEvent
 
 class BTreeBot: Bot(BotInfo.fromFile("BTreeBot.json")) {
 
@@ -12,11 +13,14 @@ class BTreeBot: Bot(BotInfo.fromFile("BTreeBot.json")) {
         while (true) {
             turnRight(45.0)
             turnGunLeft(360.0)
-            
+
         }
     }
 
+    override fun onRoundEnded(roundEndedEvent: RoundEndedEvent?) {
+        super.onRoundEnded(roundEndedEvent)
 
+    }
 }
 
 fun main(args: Array<String>) {
