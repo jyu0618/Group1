@@ -41,26 +41,26 @@ For using this repo as a template, add logic to `BTreeBot.kt` and compile. You s
 ## Competition agenda 
 We'll run a series of rounds and use the scoring system built into Tank Royale to determine the winner. The general agenda would be:
 
-### Introduction - ~20 mins
+### Introduction - approx. 20 mins
 - Who Neara is and what we do
 - What the competition is about and prizes that will be won
 - The people who are helping from Neara's side
 
-### Competition details - ~20 mins
+### Competition details - approx. 20 mins
 - Going over this repository and how a game is run
 - What is expected of your teams
 - How scoring is done
 
-### Breakout into teams - ~60 mins
+### Breakout into teams - approx. 60 mins
 - Team assignment and intro to each other 
 - Formulate a strategy
 - Read suggested documentation
 - Build build build
 
-### Test run - ~15 mins
+### Test run - approx. 15 mins
 - 1 hour into the team breakout, we'll get everyone's bot shipped and make sure everything's working
 
-### Build build build - ~60 mins
+### Build build build - approx. 60 mins
 
 ### Round 1 - Feeling out the other bots
 - Score not counted, just to get a feel for how people are building their bots
