@@ -1,9 +1,9 @@
 {
-  "name": "Group1 Bot",
+  "name": "Group1",
   "version": "1.0",
-  "authors": ["Tony"],
+  "authors": ["Marvella Budhy Wibowo", "Dicko Evaldo", "Clarence Jonathan Muljadi", "Jordan Yu"],
   "description": "test",
   "countryCodes": ["au"],
   "platform": "JVM",
-  "programmingLang": "Kotlin"
+  "programmingLang": "Java"
 }
