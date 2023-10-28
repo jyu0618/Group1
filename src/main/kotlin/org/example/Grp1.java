@@ -37,11 +37,9 @@ public class Grp1 extends Bot {
 
         // Repeat while the bot is running
         while (isRunning()) {
-            setTurnLeft(10_000);
-            setMaxSpeed(20);
             setTurnRadarLeft(10_000);
-            forward(10);
-            back(10);
+            forward(100);
+            back(100);
         }
     }
 
