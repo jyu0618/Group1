@@ -32,7 +32,40 @@ public class Grp1 extends Bot {
     @Override
     public void onScannedBot(ScannedBotEvent e) {
         // Logic
-        fire(1);
+        var bearingFromGun = gunBearingTo(e.getX(), e.getY());
+        var distance = distanceTo(e.getX(), e.getY());
+
+        // Turn the gun toward the scanned bot
+        turnGunLeft(bearingFromGun);
+
+        // If it is close enough, fire!
+        if (Math.abs(bearingFromGun) <= 3 && getGunHeat() == 0) {
+            fire(Math.min(3 - Math.abs(bearingFromGun), getEnergy() - .1));
+        }
+
+        // Generates another scan event if we see a bot.
+        // We only need to call this if the gun (and therefore radar)
+        // are not turning. Otherwise, scan is called automatically.
+        if (bearingFromGun == 0) {
+            rescan();
+        } 
+        
+        if(distance<200)
+        {
+           fire(3.5);
+        }
+        else if(distance<500)
+        {
+           fire(2.5);
+        }
+        else if(distance<800)
+        {
+           fire(1.5);
+        }
+        else
+        {
+           fire(0.5);
+        }
     }
 
     // We have hit another bot -> turn to face bot, fire hard, and ram it again!
@@ -50,6 +83,6 @@ public class Grp1 extends Bot {
     // Override the event handler for hitting a wall
     @Override
     public void onHitWall(HitWallEvent e) {
-        // Logic
+            turnLeft(180);
     }
 }
