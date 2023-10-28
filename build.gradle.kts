@@ -11,7 +11,7 @@ group = "org.example"
 version = "1.0-SNAPSHOT"
 
 application {
-    mainClass.set("org.example.Grp1")
+    mainClass.set("Project1.Project1")
 }
 
 repositories {
@@ -30,21 +30,21 @@ tasks.test {
 }
 
 tasks.withType<ShadowJar> {
-    archiveFileName.set("Grp1.jar")
+    archiveFileName.set("Project1.jar")
 
     doLast {
         copy {
-            from("src/main/kotlin/org/example/Grp1.json")
-            from("$buildDir/libs/Grp1.jar")
-            into("Grp1")
+            from("src/main/kotlin/org/example/Project1.json")
+            from("$buildDir/libs/Project1.jar")
+            into("Project1")
         }
     }
 
 }
 
 tasks.clean {
-    delete ("Grp1/Grp1.json")
-    delete ("Grp1/Grp1.jar")
+    delete ("Project1/Project1.json")
+    delete ("Project1/Project1.jar")
 }
 
 kotlin {
