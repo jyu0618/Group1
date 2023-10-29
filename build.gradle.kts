@@ -34,7 +34,7 @@ tasks.withType<ShadowJar> {
 
     doLast {
         copy {
-            from("src/main/kotlin/org/example/Project1.json")
+            from("src/main/kotlin/Project1/Project1.json")
             from("$buildDir/libs/Project1.jar")
             into("Project1")
         }
