@@ -24,7 +24,7 @@ public class Project1 extends Bot {
 
     // Constructor, which loads the bot config file
     Project1() {
-        super(BotInfo.fromFile("Grp1.json"));
+        super(BotInfo.fromFile("Project1.json"));
     }
 
     // Called when a new round is started -> initialize and do some movement
@@ -39,9 +39,9 @@ public class Project1 extends Bot {
         radar = new Radar(this);
 
         while (isRunning()) {
-            treads.run();
             radar.run();
             cannon.run();
+            treads.run();
         }
     }
 

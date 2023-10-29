@@ -1,9 +1,9 @@
 {
-    "name": "Group1",
+    "name": "Project1",
     "version": "1.0",
     "authors": ["Marvella Budhy Wibowo", "Dicko Evaldo", "Clarence Jonathan Muljadi", "Jordan Yu"],
-    "description": "test",
-    "countryCodes": ["au"],
+    "description": "The start of something grand (Hopefully)",
+    "countryCodes": ["au", "nz"],
     "platform": "JVM",
     "programmingLang": "Java"
   }
